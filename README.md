@@ -1,66 +1,23 @@
-# Pain.github.io
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Aoun! A cybersecurity enthusiast.</p>
-    <a href="https://github.com/aounali720">Check out my GitHub</a>
-</body>
-</html>
+# Aoun Ali — Cybersecurity Portfolio
 
-import React from "react";
+A streamlined, responsive portfolio for cybersecurity, cloud security and security operations.
 
-const App = () => {
-  return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 flex flex-col items-center">
-      {/* Header Section */}
-      <header className="w-full bg-gray-900 text-white text-center py-6">
-        <h1 className="text-3xl font-bold">Aoun Ali</h1>
-        <p className="text-lg">Cybersecurity Enthusiast | Cloud Security | Ethical Hacking</p>
-      </header>
+**Live site (after GitHub Pages deployment):** https://aounali720.github.io/Pain.github.io/
 
-      {/* About Section */}
-      <section className="py-10 text-center max-w-2xl">
-        <h2 className="text-2xl font-semibold">About Me</h2>
-        <p className="mt-4">
-          I'm a passionate cybersecurity specialist with expertise in cloud security, intrusion detection, and log analysis.
-        </p>
-      </section>
+## What's here
+- Featured hands-on cybersecurity projects with GitHub links
+- Background, technical toolkit, practical experience and training
+- Keyboard-accessible navigation and responsive layouts
+- SEO and social sharing metadata
+- No build tools or JavaScript frameworks required
 
-      {/* Projects Section */}
-      <section className="py-10 text-center bg-white w-full">
-        <h2 className="text-2xl font-semibold">Projects</h2>
-        <div className="mt-6 max-w-xl mx-auto bg-gray-200 p-6 rounded-lg shadow">
-          <h3 className="text-xl font-bold">Snort + Splunk Integration</h3>
-          <p className="mt-2">Intrusion detection setup using Snort IDS & Splunk Forwarder on AWS EC2.</p>
-          <a href="https://github.com/aounali720/snort-project" target="_blank" rel="noopener noreferrer" 
-             className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">
-            View Project
-          </a>
-        </div>
-      </section>
+## Deploy to GitHub Pages
+1. Open **Settings → Pages** in this repository.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select **main** and **/(root)**, then save.
+4. After merging the portfolio pull request, visit the live site above.
 
-      {/* Contact Section */}
-      <section className="py-10 text-center">
-        <h2 className="text-2xl font-semibold">Contact</h2>
-        <p className="mt-4">📧 Email: your.email@example.com</p>
-        <p>🔗 GitHub: <a href="https://github.com/aounali720" className="text-blue-500">aounali720</a></p>
-        <p>🔗 LinkedIn: <a href="https://linkedin.com/in/your-profile" className="text-blue-500">Your LinkedIn</a></p>
-      </section>
+## Customize
+Edit `index.html` to update your introduction, projects, experience or contact links. The visual styling is in the same file for easy maintenance.
 
-      {/* Footer */}
-      <footer className="w-full bg-gray-900 text-white text-center py-6 mt-10">
-        <p>© 2025 Aoun Ali. All rights reserved.</p>
-      </footer>
-    </div>
-  );
-};
-
-export default App;
+> Note: This project uses a project Pages URL because the repository is named `Pain.github.io`. To publish at `https://aounali720.github.io/`, rename the repository to `aounali720.github.io` and update the Open Graph URL in `index.html`.
