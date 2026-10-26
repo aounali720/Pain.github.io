@@ -1,131 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090e19">
-  <meta name="description" content="Portfolio of Aoun Ali — cybersecurity analyst focused on security operations, cloud security, detection engineering and hands-on defensive security projects.">
-  <meta property="og:title" content="Aoun Ali | Cybersecurity & Security Operations">
-  <meta property="og:description" content="Security operations, cloud security, detection engineering and practical security projects.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aounali720.github.io/Pain.github.io/">
-  <title>Aoun Ali | Cybersecurity & Security Operations</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {color-scheme:dark;--bg:#090e19;--surface:#101827;--surface2:#131e30;--text:#f0f4fc;--muted:#a1adc1;--line:#263247;--accent:#88b7ff;--green:#72daba;--radius:18px}
-    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
-    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-    body::before{content:"";position:absolute;z-index:-1;top:0;right:0;width:min(850px,100%);height:740px;background:radial-gradient(ellipse at 72% 25%,rgba(49,99,181,.19),transparent 64%);pointer-events:none}
-    a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offset:4px}
-    .container{width:min(1120px,calc(100% - 48px));margin:auto}.skip{position:absolute;left:20px;top:-70px;background:var(--green);color:#06121a;padding:10px 18px;z-index:10}.skip:focus{top:12px}
-    .site-header{position:sticky;top:0;z-index:5;background:rgba(9,14,25,.91);border-bottom:1px solid rgba(141,163,198,.13);backdrop-filter:blur(18px)}
-    .header-inner{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:20px}.logo{font:700 20px "Space Grotesk",sans-serif;letter-spacing:-.06em}.logo span{color:var(--green)}
-    .nav{display:flex;gap:30px;align-items:center}.nav a{font-size:14px;color:#c5cfdd;transition:color .2s}.nav a:hover,.footer a:hover{color:var(--green)}
-    .nav .nav-cta{border:1px solid #405775;padding:8px 15px;border-radius:10px;color:var(--text)}
-    .menu-toggle{display:none;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);padding:8px 12px;font:inherit;cursor:pointer}
-    .hero{padding:118px 0 112px}.eyebrow,.section-label{font:700 12px "Space Grotesk",sans-serif;letter-spacing:.19em;text-transform:uppercase;color:var(--green)}.eyebrow{display:flex;align-items:center;gap:12px}
-    .pulse{width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 0 5px rgba(114,218,186,.12)}
-    h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.17;letter-spacing:-.045em}
-    h1{font-size:clamp(3.15rem,7vw,6.25rem);max-width:930px;margin:23px 0 23px}h1 .highlight{color:var(--accent)}
-    .hero-lead{font-size:clamp(1.05rem,2vw,1.27rem);color:#bbc7d8;max-width:690px;line-height:1.75}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:32px}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:11px;padding:13px 20px;font-size:14px;font-weight:700;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px)}
-    .button-primary{background:var(--accent);color:#081222}.button-primary:hover{background:#b5d2ff}.button-secondary{border:1px solid #45536b;color:var(--text);background:rgba(255,255,255,.02)}
-    .hero-meta{display:flex;flex-wrap:wrap;gap:12px 25px;color:#8e9eb4;font-size:13px;margin-top:43px}.hero-meta span::before{content:"/";margin-right:12px;color:#667a99}
-    .section{padding:83px 0;border-top:1px solid var(--line)}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin:10px 0 35px}
-    h2{font-size:clamp(2rem,4vw,3rem);margin:9px 0 0}.section-intro{color:var(--muted);max-width:420px;margin:0;font-size:15px}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:linear-gradient(160deg,rgba(22,33,51,.92),rgba(14,22,36,.92));border:1px solid #28364c;border-radius:var(--radius);padding:27px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:#587394}
-    .card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}.card-index{font:600 13px "Space Grotesk",sans-serif;color:var(--green)}.external{color:#8fa9d1;font-size:20px}.card h3{font-size:22px;margin:0 0 12px}.card p{color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:24px}.tag-list{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:12px;color:#b4c7e4;border:1px solid #344359;background:#142136;padding:5px 10px;border-radius:6px}.card-link{display:inline-flex;margin-top:22px;font-size:13px;font-weight:700;color:var(--accent)}.card-link:hover{text-decoration:underline}
-    .about-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:62px}.about-copy p{color:#b5c2d5;font-size:16px;line-height:1.9}.facts{display:grid;gap:14px;align-content:start}.fact{padding:18px 21px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.fact strong{display:block;font:700 13px "Space Grotesk",sans-serif;color:var(--green);margin-bottom:5px}.fact span{color:#cad4e2;font-size:14px}
-    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.skill{border-top:1px solid #405574;padding-top:20px}.skill h3{font-size:18px;margin:0 0 9px}.skill p{color:var(--muted);font-size:14px;line-height:1.85}
-    .timeline{display:grid;gap:14px}.role{display:grid;grid-template-columns:190px 1fr;gap:30px;padding:24px 0;border-bottom:1px solid var(--line)}.role time{font-size:13px;color:var(--green);font-weight:700}.role h3{font-size:20px;margin:0 0 5px}.role .org{color:var(--accent);font-size:14px;margin:0 0 12px}.role .description{color:var(--muted);font-size:14px;margin:0;max-width:740px}
-    .certs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.cert{padding:18px 20px;border-radius:11px;border:1px solid var(--line);background:var(--surface)}.cert strong{font-size:14px;display:block}.cert small{color:var(--muted);font-size:12px}
-    .contact-box{padding:49px;background:linear-gradient(120deg,#14233b,#101827);border:1px solid #334664;border-radius:22px}.contact-box h2{max-width:700px}.contact-box p{color:#b7c5d8;max-width:650px;margin:18px 0 25px}.socials{display:flex;flex-wrap:wrap;gap:15px;margin-top:22px}.socials a{font-weight:600;font-size:14px;color:var(--accent)}.socials a:hover{text-decoration:underline}
-    .footer{padding:30px 0 45px;border-top:1px solid var(--line);font-size:13px;color:#8797ad}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    @media(max-width:760px){.container{width:min(100% - 36px,1120px)}.header-inner{min-height:68px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:68px;left:0;right:0;background:#0e1625;border-bottom:1px solid var(--line);padding:20px 18px;flex-direction:column;align-items:stretch;gap:18px}.nav.is-open{display:flex}.nav .nav-cta{text-align:center}.hero{padding:80px 0 78px}h1{font-size:clamp(2.7rem,10vw,4.2rem)}.section{padding:65px 0}.section-heading{display:block}.section-intro{margin-top:18px}.grid,.about-layout,.skills,.certs{grid-template-columns:1fr}.about-layout{gap:24px}.role{grid-template-columns:1fr;gap:8px}.contact-box{padding:27px}.hero-meta{margin-top:32px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f8f6"><meta name="description" content="Aoun Ali — cybersecurity portfolio. Explore practical security operations, cloud security, detection engineering and incident response labs.">
+<meta property="og:title" content="Aoun Ali — Cybersecurity & Security Operations"><meta property="og:description" content="Practical defensive security, cloud, and engineering projects."><meta property="og:type" content="website">
+<meta property="og:url" content="https://aounali720.github.io/Pain.github.io/">
+<title>Aoun Ali — Security engineer in progress</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script src="main.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="Aoun Ali, back to top">aoun<span>.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu ☰</button>
-      <nav class="nav" id="navigation" aria-label="Main navigation">
-        <a href="#projects">Projects</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a class="nav-cta" href="#contact">Get in touch ↗</a>
-      </nav>
-    </div>
-  </header>
-  <main id="main">
-    <section class="hero container" id="top" aria-labelledby="intro-title">
-      <div class="eyebrow"><span class="pulse" aria-hidden="true"></span> Cybersecurity · Security operations · Cloud</div>
-      <h1 id="intro-title">Hi, I'm Aoun.<br>I build a <span class="highlight">safer digital world.</span></h1>
-      <p class="hero-lead">I'm a computer science graduate focused on cybersecurity, from investigating security alerts and deploying detection tools to finding and fixing cloud security risks. I learn by building, testing, and documenting real systems.</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
-        <a class="button button-secondary" href="https://github.com/aounali720" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="hero-meta"><span>SOC &amp; threat detection</span><span>Cloud security</span><span>Security engineering</span></div>
-    </section>
-
-    <section class="section" id="projects" aria-labelledby="projects-heading"><div class="container">
-      <div class="section-label">01 / Selected work</div>
-      <div class="section-heading"><h2 id="projects-heading">Projects built to learn.<br>And prove it.</h2><p class="section-intro">Hands-on security projects with configurations, technical workflows, and documentation in GitHub repositories.</p></div>
-      <div class="grid">
-        <article class="card"><div class="card-top"><span class="card-index">PROJECT / 01</span><span class="external" aria-hidden="true">↗</span></div><h3>Snort + Splunk Detection Pipeline</h3><p>Deployed Snort IDS in an Ubuntu environment and used Splunk Universal Forwarder to centralize and investigate TCP and ICMP alerts.</p><div class="tag-list"><span class="tag">Snort</span><span class="tag">Splunk</span><span class="tag">Ubuntu</span><span class="tag">AWS EC2</span></div><a class="card-link" href="https://github.com/aounali720/snort-project" target="_blank" rel="noopener noreferrer">View source &amp; documentation ↗</a></article>
-        <article class="card"><div class="card-top"><span class="card-index">PROJECT / 02</span><span class="external" aria-hidden="true">↗</span></div><h3>Wazuh Security Monitoring Lab</h3><p>Set up a central Wazuh manager with Windows and Linux agents for endpoint visibility, log collection, and security event monitoring.</p><div class="tag-list"><span class="tag">Wazuh</span><span class="tag">SIEM</span><span class="tag">Linux</span><span class="tag">Windows</span></div><a class="card-link" href="https://github.com/aounali720/Wazuh-Project" target="_blank" rel="noopener noreferrer">View source &amp; documentation ↗</a></article>
-        <article class="card"><div class="card-top"><span class="card-index">PROJECT / 03</span><span class="external" aria-hidden="true">↗</span></div><h3>Google Cloud Breach Response Lab</h3><p>Investigated cloud misconfigurations using Security Command Center, then hardened storage access, firewall rules, IAM permissions, and compute resources.</p><div class="tag-list"><span class="tag">Google Cloud</span><span class="tag">IAM</span><span class="tag">Security Command Center</span></div><a class="card-link" href="https://github.com/aounali720/Google-Cloud-Cybersecurity-Project" target="_blank" rel="noopener noreferrer">View source &amp; documentation ↗</a></article>
-        <article class="card"><div class="card-top"><span class="card-index">PROJECT / 04</span><span class="external" aria-hidden="true">↗</span></div><h3>Threat Modelling &amp; DevSecOps</h3><p>An applied project exploring how threat analysis and security practices fit into the software development lifecycle.</p><div class="tag-list"><span class="tag">Threat modelling</span><span class="tag">DevSecOps</span><span class="tag">Risk analysis</span></div><a class="card-link" href="https://github.com/aounali720/Threat-Modelling-DevSecOps-Project" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
-      </div>
-    </div></section>
-
-    <section class="section" id="about" aria-labelledby="about-heading"><div class="container">
-      <div class="section-label">02 / A little about me</div><div class="section-heading"><h2 id="about-heading">Curious by nature.<br>Security-focused by choice.</h2></div>
-      <div class="about-layout"><div class="about-copy"><p>My background in computer science and full-stack development taught me how applications and infrastructure work. Cybersecurity gave me a reason to question how they fail—and how to make them more resilient.</p><p>I'm especially interested in security operations, detection engineering, cloud security, and the intersection of offensive and defensive security. I enjoy translating technical findings into practical improvements and clear documentation.</p><p>Alongside my labs, I've supported IT operations and worked on web application development, giving me a practical perspective on the systems security teams protect.</p></div><div class="facts"><div class="fact"><strong>Focus</strong><span>SOC analysis · Threat detection · Cloud security</span></div><div class="fact"><strong>Education</strong><span>Bachelor of Science in Computer Science</span></div><div class="fact"><strong>Learning style</strong><span>Build · Break down · Investigate · Document</span></div></div></div>
-    </div></section>
-
-    <section class="section" id="skills" aria-labelledby="skills-heading"><div class="container">
-      <div class="section-label">03 / Toolkit</div><div class="section-heading"><h2 id="skills-heading">Skills &amp; tools</h2><p class="section-intro">Technologies I've used in labs, technical coursework, and professional work.</p></div>
-      <div class="skills">
-        <div class="skill"><h3>Detection &amp; response</h3><p>Splunk, Wazuh, Snort, log analysis, alert triage, Wireshark, incident response fundamentals.</p></div>
-        <div class="skill"><h3>Cloud &amp; infrastructure</h3><p>Google Cloud, AWS EC2, IAM, VPC firewalls, Linux, Windows, network troubleshooting.</p></div>
-        <div class="skill"><h3>Security testing &amp; software</h3><p>Web security, OWASP Top 10, Python, Bash, Git, Laravel, JavaScript, HTML and CSS.</p></div>
-      </div>
-    </div></section>
-
-    <section class="section" id="experience" aria-labelledby="experience-heading"><div class="container">
-      <div class="section-label">04 / Experience</div><div class="section-heading"><h2 id="experience-heading">Practical experience</h2></div>
-      <div class="timeline">
-        <div class="role"><time>Oct 2024 — Present</time><div><h3>Senior IT Manager <span style="color:var(--muted);font-size:14px;font-weight:400">(part-time)</span></h3><p class="org">VerbixTech</p><p class="description">Support day-to-day IT operations across devices, networks, websites, and hosting environments. Troubleshoot technical problems and review suspicious website submissions.</p></div></div>
-        <div class="role"><time>2025 · Internship</time><div><h3>Full Stack Developer Intern</h3><p class="org">IJ Technologies</p><p class="description">Worked with Laravel, JavaScript, Bootstrap, HTML and CSS on application features, APIs, authentication, and role-based access control.</p></div></div>
-        <div class="role"><time>2024 — Present</time><div><h3>Hands-on Security Labs &amp; CTFs</h3><p class="org">TryHackMe · Personal projects</p><p class="description">Practice security operations, penetration testing, Active Directory fundamentals, and incident analysis through guided labs and self-directed projects.</p></div></div>
-      </div>
-    </div></section>
-
-    <section class="section" id="certifications" aria-labelledby="certifications-heading"><div class="container">
-      <div class="section-label">05 / Continuous learning</div><div class="section-heading"><h2 id="certifications-heading">Certifications &amp; learning paths</h2><p class="section-intro">A selection of completed professional certificates and hands-on training paths.</p></div>
-      <div class="certs">
-        <div class="cert"><strong>Google Cybersecurity Professional Certificate</strong><small>Google · Coursera</small></div>
-        <div class="cert"><strong>Google Cloud Cybersecurity Professional Certificate</strong><small>Google · Coursera</small></div>
-        <div class="cert"><strong>SOC Level 1 Learning Path</strong><small>TryHackMe</small></div>
-        <div class="cert"><strong>Jr Penetration Tester Learning Path</strong><small>TryHackMe</small></div>
-        <div class="cert"><strong>AI Security Learning Path</strong><small>TryHackMe</small></div>
-        <div class="cert"><strong>Cyber Security Training (CEH / CHFI)</strong><small>NAVTTC</small></div>
-      </div>
-    </div></section>
-
-    <section class="section" id="contact" aria-labelledby="contact-heading"><div class="container">
-      <div class="contact-box"><div class="section-label">06 / Let's connect</div><h2 id="contact-heading">Have a role, project, or security challenge in mind?</h2><p>I'm interested in cybersecurity analyst, SOC, cloud security, and related opportunities. Feel free to connect or explore more of my work.</p><a class="button button-primary" href="https://www.linkedin.com/in/mohammad-aoun-abbas/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><div class="socials"><a href="https://github.com/aounali720" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mohammad-aoun-abbas/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://tryhackme.com/p/Aoun8080" target="_blank" rel="noopener noreferrer">TryHackMe ↗</a></div></div>
-    </div></section>
-  </main>
-  <footer class="footer"><div class="container footer-inner"><span>© <span id="year">2026</span> Aoun Ali. Built with intent.</span><span>Cybersecurity · Curiosity · Continuous improvement</span></div></footer>
-  <script>
-    const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#navigation');
-    toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));nav.classList.toggle('is-open',!open);});
-    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');}));
-    document.querySelector('#year').textContent=new Date().getFullYear();
-  </script>
-</body>
-</html>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header"><div class="wrap nav-wrap"><a class="wordmark" href="#top" aria-label="Aoun Ali — home"><span class="brand-icon">a.</span><span>Aoun Ali</span></a>
+<nav class="nav" id="nav" aria-label="Primary navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#credentials">Credentials</a><a href="#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a></nav>
+<button class="menu-button" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button></div></header>
+<main id="main">
+<section class="hero wrap" id="top"><div class="eyebrow"><span class="status-dot"></span> CYBERSECURITY / SECURITY OPERATIONS</div><h1>Making systems<br><span>more secure,</span><br>one problem at a time<span class="period">.</span></h1>
+<div class="hero-bottom"><p>I'm Aoun — a computer science graduate working across security operations, cloud security, and detection engineering. I turn hands-on labs into documented, practical security work.</p>
+<div class="hero-actions"><a class="button dark" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a class="button subtle" href="https://www.linkedin.com/in/mohammad-aoun-abbas/" target="_blank" rel="noopener noreferrer">Let's connect <span aria-hidden="true">↗</span></a></div></div>
+<div class="hero-foot"><span>Based in Pakistan · Open to opportunities</span><span>Scroll to explore <span aria-hidden="true">↓</span></span></div></section>
+<section class="section work-section" id="work"><div class="wrap"><div class="section-kicker"><span class="section-num">01 /</span> SELECTED WORK <span class="section-rule"></span> <span>2024 — 2026</span></div><div class="section-header"><h2>Proof of work<span class="period">.</span></h2><p>Not just tools on a résumé. These projects show how I investigate, configure, and document security systems.</p></div><div id="projects" class="projects" aria-label="Featured security projects"></div><a class="text-link" href="https://github.com/aounali720?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all GitHub repositories <span aria-hidden="true">↗</span></a></div></section>
+<section class="section" id="about"><div class="wrap"><div class="section-kicker"><span class="section-num">02 /</span> ABOUT <span class="section-rule"></span> THE PERSON BEHIND THE WORK</div><div class="about-grid"><div><h2>Curiosity is<br>my starting point<span class="period">.</span></h2></div><div class="prose"><p>I started with computer science and web development, learning what makes software and networks tick. Cybersecurity pushed me to look a level deeper: what could go wrong, how would I detect it, and what would I change?</p><p>Today my focus is practical blue teaming, security monitoring, cloud hardening, and understanding both attacker techniques and defensive controls. I care about thoughtful investigation, useful documentation, and systems that are genuinely safer after I've worked on them.</p><div class="chips"><span>Security operations</span><span>Threat detection</span><span>Cloud security</span><span>Incident analysis</span><span>Linux &amp; networks</span><span>Web security</span></div></div></div></div></section>
+<section class="section tinted" id="experience"><div class="wrap"><div class="section-kicker"><span class="section-num">03 /</span> EXPERIENCE &amp; CAPABILITIES <span class="section-rule"></span> WHERE THEORY MEETS PRACTICE</div><div class="section-header"><h2>Beyond the lab<span class="period">.</span></h2><p>Real-world IT support and development experience informs the way I approach security.</p></div><div class="resume"><article><div class="resume-date">OCT 2024 — PRESENT</div><div><h3>Senior IT Manager <span class="qualification">· Part-time</span></h3><p class="company">VerbixTech</p><p>Support website operations, troubleshoot endpoint and network problems, and help maintain reliable IT and hosting environments.</p></div></article><article><div class="resume-date">2025 · INTERNSHIP</div><div><h3>Full Stack Developer Intern</h3><p class="company">IJ Technologies</p><p>Worked with Laravel, REST APIs, JavaScript, authentication, and role-based access controls, gaining a developer’s view of application security.</p></div></article><article><div class="resume-date">2024 — PRESENT</div><div><h3>Security labs and self-directed learning</h3><p class="company">TryHackMe &amp; personal projects</p><p>Hands-on work in SOC workflows, intrusion detection, Active Directory, cloud risk assessment, and penetration-testing fundamentals.</p></div></article></div>
+<div class="toolkit"><div><span class="mini-label">DETECTION &amp; OPERATIONS</span><p>Splunk · Wazuh · Snort · Wireshark · alert triage</p></div><div><span class="mini-label">CLOUD &amp; SYSTEMS</span><p>Google Cloud · AWS EC2 · IAM · Linux · Windows</p></div><div><span class="mini-label">ENGINEERING &amp; TESTING</span><p>Python · Bash · Git · Laravel · networking · OWASP</p></div></div></div></section>
+<section class="section" id="credentials"><div class="wrap"><div class="section-kicker"><span class="section-num">04 /</span> LEARNING <span class="section-rule"></span> ALWAYS BUILDING</div><div class="section-header"><h2>Curious, continuously<span class="period">.</span></h2><p>Relevant certificates and completed learning paths supporting practical security work.</p></div><div class="credentials" id="cert-list">
+<div><span>Google · Coursera</span><strong>Google Cybersecurity Professional Certificate</strong></div>
+<div><span>Google · Coursera</span><strong>Google Cloud Cybersecurity Professional Certificate</strong></div>
+<div><span>TryHackMe</span><strong>SOC Level 1 Learning Path</strong></div>
+<div><span>TryHackMe</span><strong>Jr Penetration Tester Learning Path</strong></div>
+<div><span>TryHackMe</span><strong>AI Security Learning Path</strong></div>
+<div><span>NAVTTC</span><strong>Cyber Security Training — CEH / CHFI</strong></div></div></div></section>
+<section class="contact-section" id="contact"><div class="wrap"><div class="section-kicker"><span class="section-num">05 /</span> CONTACT <span class="section-rule"></span> LET'S TALK</div><h2>Let's build<br>something <em>secure.</em></h2><p>Exploring opportunities in security operations, cloud security, and cybersecurity analysis. If my work is relevant to your team, I'd love to connect.</p><div class="contact-actions"><a class="button white" href="https://www.linkedin.com/in/mohammad-aoun-abbas/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a class="contact-link" href="https://github.com/aounali720" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="contact-link" href="https://tryhackme.com/p/Aoun8080" target="_blank" rel="noopener noreferrer">TryHackMe ↗</a></div></div></section></main>
+<footer><div class="wrap footer-grid"><span>© <span id="year">2026</span> Aoun Ali</span><span>Built simply. Built to last.</span><a href="#top">Back to top ↑</a></div></footer>
+</body></html>
