@@ -1,6 +1,6 @@
 # Aoun Ali — Cybersecurity Portfolio
 
-Elegant, accessible, and responsive static portfolio featuring my hands-on cybersecurity projects, experience, and technical interests.
+A small static site where I keep my security labs, software projects and work experience in one place.
 
 ## Structure
 
@@ -14,7 +14,7 @@ Elegant, accessible, and responsive static portfolio featuring my hands-on cyber
 - **[StackBound Academy](https://aounali720.github.io/stackbound-academy/)** — a playable, open-source React/TypeScript training game for Git, GitHub, Docker, Kubernetes and cloud infrastructure. Includes 8 learning worlds, 40 missions, quizzes, flashcards, safe simulated terminal labs, daily quests, and a cosmetic reward system. [Source code](https://github.com/aounali720/stackbound-academy).
 - **[SignalForge 720](https://github.com/aounali720/signalforge-720)** — a local Python/Streamlit SOC practice dashboard for public advisory triage, declared lab-inventory CVE matching, investigation notes, detection worksheets and evidence exports. Its offline sample cases are explicitly fictional. [Demo walkthrough](https://github.com/aounali720/signalforge-720/blob/main/docs/demo-walkthrough.md).
 
-Both use in-page original vector illustrations alongside the existing project case studies. No external preview images or website dependencies are added.
+The illustrations are SVGs in `main.js`, so the site doesn't need a separate image service.
 
 ## Editing projects
 
