@@ -15,3 +15,7 @@ jobs:
           node-version: '22'
       - run: node --check main.js
       - run: node scripts/validate-portfolio.mjs
+      - run: node --check casefile-zero/content.mjs
+      - run: node --check casefile-zero/engine.mjs
+      - run: node --check casefile-zero/app.mjs
+      - run: node casefile-zero/tests/verify.mjs
