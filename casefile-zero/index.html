@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#12201e">
+<meta name="description" content="Casefile Zero: a playable cybersecurity field guide with OWASP Top 10:2025 missions, animated diagrams, inert payload specimens, quizzes and MITRE ATT&CK TTP investigations.">
+<meta property="og:title" content="Casefile Zero — Cybersecurity Field Game">
+<meta property="og:description" content="Investigate the flaw. Follow the request. Defend the boundary.">
+<title>CASEFILE / ZERO — Cybersecurity field game</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+<aside class="rail" id="rail" aria-label="Game navigation">
+  <a href="#/home" class="logo" aria-label="Casefile Zero home">
+    <span class="logo-mark"><span class="logo-cross">+</span><strong>CF</strong><span class="logo-zero">00</span></span>
+    <span class="logo-type"><b>CASEFILE</b><small>SECURITY FIELDWORK / VOL. 01</small></span>
+  </a>
+  <div class="rail-separator"><span>YOUR OPERATIONS</span><span>01—04</span></div>
+  <nav class="main-nav" id="main-nav" aria-label="Sections">
+    <a href="#/home" data-route="home"><span class="nav-index">01</span> The briefing <span aria-hidden="true">↗</span></a>
+    <a href="#/missions" data-route="missions"><span class="nav-index">02</span> OWASP campaign <span aria-hidden="true">↗</span></a>
+    <a href="#/specimens" data-route="specimens"><span class="nav-index">03</span> Payload notebook <span aria-hidden="true">↗</span></a>
+    <a href="#/ttp" data-route="ttp"><span class="nav-index">04</span> TTP investigations <span aria-hidden="true">↗</span></a>
+  </nav>
+  <div class="rail-separator chapter-separator"><span>OWASP TOP 10 / 2025</span><span>10 FILES</span></div>
+  <div id="sidebar-chapters" class="chapter-shortcuts" aria-label="Jump to OWASP case"></div>
+  <div class="rail-bottom"><div class="rail-identity"><span class="identity-avatar">R</span><div><b id="sidebar-rank">NEW RECRUIT</b><small id="sidebar-level">0 XP · 0 / 10 cleared</small></div></div>
+  <div class="rail-progress"><div id="sidebar-bar"></div></div>
+  <p>LOCAL SIMULATION · NO REAL TARGETS</p></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-controls="rail" aria-expanded="false" aria-label="Open navigation">☰</button>
+    <div class="breadcrumbs"><span>FIELD OFFICE</span><span class="crumb-chevron">/</span><strong id="current-crumb">THE BRIEFING</strong></div>
+    <div class="topbar-right"><span class="live-dot" aria-hidden="true"></span><span class="top-live">SIMULATOR ONLINE</span><span class="top-divider"></span><span id="top-xp" class="top-xp">0000 XP</span></div>
+  </header>
+  <main id="main" tabindex="-1" aria-live="off"></main>
+  <footer class="footer"><span>CASEFILE / ZERO · AN INDEPENDENT LEARNING PROJECT</span><span>OWASP + MITRE REFERENCE MATERIAL · UNOFFICIAL</span><button id="reset-button" type="button">RESET PROGRESS</button></footer>
+</div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
