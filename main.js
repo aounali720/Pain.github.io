@@ -1,7 +1,7 @@
 const projects=[
   {
     n:"01",title:"StackBound Academy — Interactive Learning Game",
-    description:"Designed and shipped a gamified DevOps learning platform with eight worlds, 40 missions, Docker and cloud lessons, flashcards, command simulations, daily quests, boss encounters, and XP-based progression. The game runs on GitHub Pages.",
+    description:"Built a browser-based game to practice Git, Docker, Kubernetes and cloud basics. It has 40 lessons across eight worlds, with short quizzes, flashcards, simulated terminal exercises and progress tracking.",
     tags:["React · TypeScript","Docker","Kubernetes","GitHub Actions"],
     url:"https://github.com/aounali720/stackbound-academy",
     demo:"https://aounali720.github.io/stackbound-academy/",
@@ -10,17 +10,17 @@ const projects=[
   },
   {
     n:"02",title:"SignalForge 720 — SOC Investigation Workbench",
-    description:"Built a local SOC practice app for public advisory triage, CISA KEV and EPSS review, fictional CVE-to-asset exercises, detection worksheets, case notes, and report exports. Includes reproducible offline demo cases and automated tests.",
+    description:"A local SOC practice dashboard built with Python and Streamlit. I use it to review CISA KEV and EPSS data, take investigation notes, work through fictional inventory examples and export case reports.",
     tags:["Python · Streamlit","Threat intelligence","SQLite","Detection engineering"],
     url:"https://github.com/aounali720/signalforge-720",
     demo:"https://github.com/aounali720/signalforge-720/blob/main/docs/demo-walkthrough.md",
     demoLabel:"View walkthrough",
     art:"signalforge",featured:true
   },
-  {n:"03",title:"Snort × Splunk Detection Lab",description:"Built an intrusion-detection pipeline with Snort on Ubuntu and Splunk Universal Forwarder, forwarding and investigating TCP and ICMP alerts.",tags:["Detection engineering","Snort","Splunk","Ubuntu"],url:"https://github.com/aounali720/snort-project",art:"detection"},
-  {n:"04",title:"Wazuh Endpoint Monitoring",description:"Deployed a central Wazuh manager and connected Windows and Ubuntu agents to collect events and support host-based security monitoring.",tags:["Security operations","Wazuh","Windows","Linux"],url:"https://github.com/aounali720/Wazuh-Project",art:"endpoints"},
-  {n:"05",title:"Google Cloud Incident Response",description:"Investigated a simulated cloud breach and remediated exposed storage, permissive firewall rules, and VM configuration issues using Security Command Center.",tags:["Cloud security","Google Cloud","Incident response","IAM"],url:"https://github.com/aounali720/Google-Cloud-Cybersecurity-Project",art:"cloud"},
-  {n:"06",title:"Threat Modelling Workshop Exercise",description:"Documented a guided threat-modelling scenario using STRIDE and MITRE ATT&CK to assess attack paths, risks, and defensive controls.",tags:["Training exercise","Threat modelling","STRIDE","Risk assessment"],url:"https://github.com/aounali720/Threat-Modelling-DevSecOps-Project",art:"threat"}
+  {n:"03",title:"Snort × Splunk Detection Lab",description:"Configured Snort on an Ubuntu VM and forwarded its TCP and ICMP alerts to Splunk to practice log review.",tags:["Detection engineering","Snort","Splunk","Ubuntu"],url:"https://github.com/aounali720/snort-project",art:"detection"},
+  {n:"04",title:"Wazuh Endpoint Monitoring",description:"Installed Wazuh on an Ubuntu cloud VM and connected Windows and Ubuntu agents to see their events in one dashboard.",tags:["Security operations","Wazuh","Windows","Linux"],url:"https://github.com/aounali720/Wazuh-Project",art:"endpoints"},
+  {n:"05",title:"Google Cloud Incident Response",description:"Worked through a Google Cloud incident exercise involving a public bucket, broad firewall rules and insecure VM settings.",tags:["Cloud security","Google Cloud","Incident response","IAM"],url:"https://github.com/aounali720/Google-Cloud-Cybersecurity-Project",art:"cloud"},
+  {n:"06",title:"Threat Modelling Workshop Exercise",description:"Worked through a fictional threat-modelling workshop, mapping possible attack paths and control gaps with STRIDE and MITRE ATT&CK.",tags:["Training exercise","Threat modelling","STRIDE","Risk assessment"],url:"https://github.com/aounali720/Threat-Modelling-DevSecOps-Project",art:"threat"}
 ];
 const visuals={
 stackbound:'<rect x="20" y="18" width="260" height="110" rx="5" fill="#20342b"/><path d="M34 42H266M34 111H266" stroke="#789587" stroke-opacity=".3"/><path d="M58 80 146 54 241 82" fill="none" stroke="#e4a076" stroke-width="2.4" stroke-dasharray="4 7" stroke-linecap="round"/><g fill="#ed8559" stroke="#f3cf9e" stroke-width="1.5"><rect x="43" y="66" width="28" height="28" rx="3"/><rect x="132" y="40" width="28" height="28" rx="3"/><rect x="227" y="68" width="28" height="28" rx="3"/></g><g fill="#20342b" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle"><text x="57" y="84">01</text><text x="146" y="58">04</text><text x="241" y="86">08</text></g><g fill="#f4e7cf" font-family="monospace" font-size="8" font-weight="700" text-anchor="middle"><text x="57" y="107">GIT</text><text x="146" y="82">DOCKER</text><text x="241" y="110">CLOUD</text></g><g fill="#e6aa87" font-family="monospace" font-size="8" font-weight="700"><text x="34" y="34">S/B — FIELD ROUTE</text><text x="175" y="34">40 MISSIONS</text></g>',
