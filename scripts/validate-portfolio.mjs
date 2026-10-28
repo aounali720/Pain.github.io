@@ -15,19 +15,21 @@ const mockDocument = { querySelector(selector) {
 runInNewContext(source, { document: mockDocument, Date }, { filename: 'main.js', timeout: 1000 });
 
 const output = projects.innerHTML;
-assert.equal((output.match(/<article class="project /g) ?? []).length, 6, 'Expected all six project cards');
-assert.equal((output.match(/class="featured-label"/g) ?? []).length, 2, 'Expected two featured projects');
+assert.equal((output.match(/<article class="project /g) ?? []).length, 7, 'Expected all seven project cards');
+assert.equal((output.match(/class="featured-label"/g) ?? []).length, 3, 'Expected three featured projects');
 assert.match(output, /StackBound Academy/);
 assert.match(output, /SignalForge 720/);
+assert.match(output, /Casefile Zero/);
+assert.match(output, /casefile-zero\//);
 assert.match(output, /https:\/\/aounali720\.github\.io\/stackbound-academy\//);
 assert.match(output, /https:\/\/github\.com\/aounali720\/stackbound-academy/);
 assert.match(output, /https:\/\/github\.com\/aounali720\/signalforge-720/);
 assert.match(output, /View walkthrough/);
 assert.doesNotMatch(output, /undefined|null<\/svg>/);
-assert.equal((output.match(/<svg viewBox=/g) ?? []).length, 6, 'Every project needs an illustration');
-assert.equal((output.match(/rel="noopener noreferrer"/g) ?? []).length, 8, 'External project links must have safe rel');
+assert.equal((output.match(/<svg viewBox=/g) ?? []).length, 7, 'Every project needs an illustration');
+assert.equal((output.match(/rel="noopener noreferrer"/g) ?? []).length, 10, 'External project links must have safe rel');
 assert.match(page, /id="projects"/);
 assert.match(page, /<script src="main\.js" defer>/);
 assert.match(css, /\.project-featured/);
 assert.match(css, /\.project-demo/);
-console.log('Portfolio validation passed: 6 projects, 2 featured, live/code links, SVGs, and semantics.');
+console.log('Portfolio validation passed: 7 projects, 3 featured, live/code links, SVGs, and semantics.');
