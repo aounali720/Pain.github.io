@@ -17,12 +17,12 @@ runInNewContext(source, { document: mockDocument, Date }, { filename: 'main.js',
 const output = projects.innerHTML;
 assert.equal((output.match(/<article class="project /g) ?? []).length, 7, 'Expected all seven project cards');
 assert.equal((output.match(/class="featured-label"/g) ?? []).length, 3, 'Expected three featured projects');
-assert.match(output, /StackBound Academy/);
+assert.match(output, /Ops Atlas/);
 assert.match(output, /SignalForge 720/);
 assert.match(output, /Casefile Zero/);
 assert.match(output, /casefile-zero\//);
-assert.match(output, /https:\/\/aounali720\.github\.io\/stackbound-academy\//);
-assert.match(output, /https:\/\/github\.com\/aounali720\/stackbound-academy/);
+assert.match(output, /https:\/\/aounali720\.github\.io\/ops-atlas\//);
+assert.match(output, /https:\/\/github\.com\/aounali720\/ops-atlas/);
 assert.match(output, /https:\/\/github\.com\/aounali720\/signalforge-720/);
 assert.match(output, /View walkthrough/);
 assert.doesNotMatch(output, /undefined|null<\/svg>/);
