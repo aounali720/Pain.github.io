@@ -9,7 +9,14 @@ const projects=[
     art:"socfieldwork",featured:true
   },
   {
-    n:"02",title:"Casefile Zero — Cybersecurity Field Game",
+    n:"02",title:"PACKET//ZERO — Cybersecurity Learning Game",
+    description:"A browser-based security learning game with 74 lessons, interactive network diagrams, self-check questions and eight safe simulations covering networks, identity, web threats, cloud and SOC fundamentals.",
+    tags:["Cybersecurity fundamentals","Network protocols","Interactive labs","JavaScript"],
+    url:"https://github.com/aounali720/packet-zero",
+    art:"packetzero",featured:true
+  },
+  {
+    n:"03",title:"Casefile Zero — Cybersecurity Field Game",
     description:"A standalone browser game for learning the OWASP Top 10:2025. It combines request-flow diagrams, annotated payload examples, code reviews, quizzes and fictional TTP investigations. Examples are simulated; nothing is executed.",
     tags:["OWASP Top 10:2025","Web security","TTP analysis","Vanilla JavaScript"],
     url:"https://github.com/aounali720/Pain.github.io/tree/main/casefile-zero",
@@ -18,7 +25,7 @@ const projects=[
     art:"casefile",featured:true
   },
   {
-    n:"03",title:"Ops Atlas — Interactive Learning Game",
+    n:"04",title:"Ops Atlas — Interactive Learning Game",
     description:"Built a browser-based game to practice Git, Docker, Kubernetes and cloud basics. It has 40 lessons across eight worlds, with short quizzes, flashcards, simulated terminal exercises and progress tracking.",
     tags:["React · TypeScript","Docker","Kubernetes","GitHub Actions"],
     url:"https://github.com/aounali720/ops-atlas",
@@ -27,7 +34,7 @@ const projects=[
     art:"opsatlas",featured:true
   },
   {
-    n:"04",title:"SignalForge 720 — SOC Investigation Workbench",
+    n:"05",title:"SignalForge 720 — SOC Investigation Workbench",
     description:"A local SOC practice dashboard built with Python and Streamlit. I use it to review CISA KEV and EPSS data, take investigation notes, work through fictional inventory examples and export case reports.",
     tags:["Python · Streamlit","Threat intelligence","SQLite","Detection engineering"],
     url:"https://github.com/aounali720/signalforge-720",
@@ -35,12 +42,21 @@ const projects=[
     demoLabel:"View walkthrough",
     art:"signalforge",featured:true
   },
-  {n:"05",title:"Snort × Splunk Detection Lab",description:"Configured Snort on an Ubuntu VM and forwarded its TCP and ICMP alerts to Splunk to practice log review.",tags:["Detection engineering","Snort","Splunk","Ubuntu"],url:"https://github.com/aounali720/snort-project",art:"detection"},
-  {n:"06",title:"Wazuh Endpoint Monitoring",description:"Installed Wazuh on an Ubuntu cloud VM and connected Windows and Ubuntu agents to see their events in one dashboard.",tags:["Security operations","Wazuh","Windows","Linux"],url:"https://github.com/aounali720/Wazuh-Project",art:"endpoints"},
-  {n:"07",title:"Google Cloud Incident Response",description:"Worked through a Google Cloud incident exercise involving a public bucket, broad firewall rules and insecure VM settings.",tags:["Cloud security","Google Cloud","Incident response","IAM"],url:"https://github.com/aounali720/Google-Cloud-Cybersecurity-Project",art:"cloud"},
-  {n:"08",title:"Threat Modelling Workshop Exercise",description:"Worked through a fictional threat-modelling workshop, mapping possible attack paths and control gaps with STRIDE and MITRE ATT&CK.",tags:["Training exercise","Threat modelling","STRIDE","Risk assessment"],url:"https://github.com/aounali720/Threat-Modelling-DevSecOps-Project",art:"threat"}
+  {
+    n:"06",title:"Harbor GRC — Risk & Control Workbench",
+    description:"A fictional SaaS risk-management application linking assets, findings, controls, owners and evidence to document risk decisions. Built for reproducible GRC practice, not as a production audit tool.",
+    tags:["GRC","Risk assessment","ISO / NIST","Evidence workflows"],
+    url:"https://github.com/aounali720/harbor-grc",
+    art:"harborgrc"
+  },
+  {n:"07",title:"Snort × Splunk Detection Lab",description:"Configured Snort on an Ubuntu VM and forwarded its TCP and ICMP alerts to Splunk to practice log review.",tags:["Detection engineering","Snort","Splunk","Ubuntu"],url:"https://github.com/aounali720/snort-project",art:"detection"},
+  {n:"08",title:"Wazuh Endpoint Monitoring",description:"Installed Wazuh on an Ubuntu cloud VM and connected Windows and Ubuntu agents to see their events in one dashboard.",tags:["Security operations","Wazuh","Windows","Linux"],url:"https://github.com/aounali720/Wazuh-Project",art:"endpoints"},
+  {n:"09",title:"Google Cloud Incident Response",description:"Worked through a Google Cloud incident exercise involving a public bucket, broad firewall rules and insecure VM settings.",tags:["Cloud security","Google Cloud","Incident response","IAM"],url:"https://github.com/aounali720/Google-Cloud-Cybersecurity-Project",art:"cloud"},
+  {n:"10",title:"Threat Modelling Workshop Exercise",description:"Worked through a fictional threat-modelling workshop, mapping possible attack paths and control gaps with STRIDE and MITRE ATT&CK.",tags:["Training exercise","Threat modelling","STRIDE","Risk assessment"],url:"https://github.com/aounali720/Threat-Modelling-DevSecOps-Project",art:"threat"}
 ];
 const visuals={
+packetzero:'<rect x="18" y="16" width="264" height="112" rx="5" fill="#1e3630"/><g font-family="monospace" font-size="8" font-weight="700" fill="#ead5ad"><text x="32" y="34">PACKET//ZERO</text><text x="224" y="34">NETLAB</text></g><path d="M18 43H282" stroke="#91baaa" stroke-opacity=".45"/><g stroke="#efad7e" stroke-width="2.2" fill="none"><path d="M66 82H136M168 82H231"/><path d="m129 76 7 6-7 6M224 76l7 6-7 6"/></g><g fill="#e5eadb" stroke="#8cbaa7" stroke-width="1.5"><rect x="34" y="65" width="48" height="35" rx="4"/><rect x="136" y="61" width="42" height="43" rx="4"/><rect x="231" y="65" width="39" height="35" rx="4"/></g><g font-family="monospace" font-size="9" fill="#25463e" font-weight="700" text-anchor="middle"><text x="58" y="85">HOST</text><text x="157" y="85">FW</text><text x="250" y="85">NET</text></g><text x="32" y="118" font-family="monospace" font-size="8" fill="#c7dbcd">INSPECT · UNDERSTAND · DEFEND</text>',
+harborgrc:'<rect x="18" y="16" width="264" height="112" rx="5" fill="#1d3532"/><g font-family="monospace" font-weight="700" font-size="8" fill="#e8cc9e"><text x="31" y="34">HARBOR / ASSURANCE</text><text x="249" y="34">GRC</text></g><path d="M18 43H282" stroke="#90b5a5" stroke-opacity=".45"/><g fill="#d6e4d8" stroke="#94b6a4" stroke-width="1.4"><rect x="32" y="60" width="69" height="37" rx="3"/><rect x="116" y="60" width="68" height="37" rx="3"/><rect x="199" y="60" width="69" height="37" rx="3"/></g><g fill="#254339" font-family="monospace" font-weight="700" font-size="9" text-anchor="middle"><text x="66" y="82">RISK</text><text x="150" y="82">CONTROL</text><text x="233" y="82">EVIDENCE</text></g><path d="M101 78H116M184 78H199" stroke="#e6ab7a" stroke-width="2.5" stroke-dasharray="3 3"/><text x="32" y="117" font-family="monospace" font-size="8" fill="#c1d9cb">TRACE FINDINGS TO DECISIONS</text>',
 socfieldwork:'<rect x="17" y="15" width="266" height="115" rx="5" fill="#1c322e"/><path d="M17 40H283M17 111H283" stroke="#76998b" stroke-opacity=".36"/><g fill="#e6c49f" font-family="monospace" font-weight="700" font-size="8"><text x="30" y="31">SOC / FIELDWORK</text><text x="225" y="31">L1—L3</text></g><path d="M86 73H116M184 73H213" stroke="#83b4a5" stroke-width="2.5" stroke-dasharray="4 4"/><path d="m110 68 6 5-6 5M207 68l6 5-6 5" stroke="#83b4a5" stroke-width="2" fill="none"/><rect x="28" y="53" width="58" height="39" rx="4" fill="#3a5c54" stroke="#90baaa"/><rect x="116" y="53" width="68" height="39" rx="4" fill="#e6ad83"/><rect x="213" y="53" width="59" height="39" rx="4" fill="#3a5c54" stroke="#90baaa"/><g font-family="monospace" font-weight="700" font-size="9" text-anchor="middle"><text x="57" y="76" fill="#f4e3c9">ALERT</text><text x="150" y="76" fill="#203b32">TRIAGE</text><text x="242" y="76" fill="#f4e3c9">HANDOFF</text></g><g font-family="monospace" font-size="8" fill="#abc6b7"><text x="30" y="122">EVIDENCE</text><text x="117" y="122">DECISION</text><text x="218" y="122">REPORT</text></g>',
 casefile:'<rect x="21" y="17" width="258" height="110" rx="4" fill="#1d342a"/><path d="M21 41H279M21 104H279" stroke="#94aa93" stroke-opacity=".32"/><g font-family="monospace" fill="#edd2a1"><text x="35" y="32" font-size="9">CASEFILE // 00</text><text x="224" y="32" font-size="8">TOP 10 / 2025</text></g><rect x="37" y="61" width="60" height="27" fill="#d79c73"/><rect x="120" y="61" width="61" height="27" fill="#e9dfc4"/><rect x="204" y="61" width="60" height="27" fill="#d79c73"/><g fill="#23382d" font-family="monospace" font-size="10" text-anchor="middle" font-weight="bold"><text x="67" y="78">INPUT</text><text x="151" y="78">CHECK</text><text x="234" y="78">DATA</text></g><path d="M98 74H119M182 74H203" stroke="#e7b58a" stroke-width="2" stroke-dasharray="4 4"/><g fill="#d5cfb8" font-family="monospace" font-size="8"><text x="35" y="118">TTP / DETECT / DEFEND</text></g>',
 opsatlas:'<rect x="20" y="18" width="260" height="110" rx="5" fill="#20342b"/><path d="M34 42H266M34 111H266" stroke="#789587" stroke-opacity=".3"/><path d="M58 80 146 54 241 82" fill="none" stroke="#e4a076" stroke-width="2.4" stroke-dasharray="4 7" stroke-linecap="round"/><g fill="#ed8559" stroke="#f3cf9e" stroke-width="1.5"><rect x="43" y="66" width="28" height="28" rx="3"/><rect x="132" y="40" width="28" height="28" rx="3"/><rect x="227" y="68" width="28" height="28" rx="3"/></g><g fill="#20342b" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle"><text x="57" y="84">01</text><text x="146" y="58">04</text><text x="241" y="86">08</text></g><g fill="#f4e7cf" font-family="monospace" font-size="8" font-weight="700" text-anchor="middle"><text x="57" y="107">GIT</text><text x="146" y="82">DOCKER</text><text x="241" y="110">CLOUD</text></g><g fill="#e6aa87" font-family="monospace" font-size="8" font-weight="700"><text x="34" y="34">OPS / FIELD ROUTE</text><text x="175" y="34">40 MISSIONS</text></g>',
