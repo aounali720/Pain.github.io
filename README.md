@@ -11,7 +11,9 @@ A small static site where I keep my security labs, software projects and work ex
 
 ## Newly featured projects
 
-- **[SOC FIELDWORK](https://aounali720.github.io/soc-fieldwork/)** — an interactive SOC L1–L3 learning game with visual explainers, synthetic event logs, analyst shift simulations, evidence-search drills, incident decisions and interview exercises. [Source code](https://github.com/aounali720/soc-fieldwork).
+- **[SOC FIELDWORK](https://aounali720.github.io/soc-fieldwork/)** — interactive SOC analyst training game with synthetic log investigations, incident cases, visual explainers, practice exercises, and shift simulations. [Source code](https://github.com/aounali720/soc-fieldwork).
+- **[PACKET//ZERO](https://github.com/aounali720/packet-zero)** — browser-based cybersecurity game with networking diagrams, 74 lessons, and eight safe simulated labs.
+- **[Harbor GRC](https://github.com/aounali720/harbor-grc)** — fictional SaaS risk and control workbench connecting findings, evidence, ownership, and risk decisions.
 
 - **[Casefile Zero](https://aounali720.github.io/Pain.github.io/casefile-zero/)** — my standalone cybersecurity learning game covering all ten OWASP Top 10:2025 risks with annotated diagrams, code comparisons, 33 inert payload specimens, 30 questions and six TTP investigations. [Source](casefile-zero/README.md).
 
@@ -22,7 +24,7 @@ The illustrations are SVGs in `main.js`, so the site doesn't need a separate ima
 
 ## Editing projects
 
-Open `main.js` and update the `projects` array. Each entry specifies a title, summary, technologies, repository URL and diagram style. New entries automatically render using the same layout.
+Open `main.js` and update the `projects` array. Each entry specifies a title, summary, technologies, repository URL and diagram style. Project cards are also pre-rendered in `index.html` as a fallback, so the portfolio still shows the projects when JavaScript is disabled or blocked. When changing the project list, update both the `projects` array and the corresponding static HTML cards.
 
 ## Deployment
 
