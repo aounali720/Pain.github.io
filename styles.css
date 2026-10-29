@@ -24,6 +24,9 @@ footer{background:#111c19;color:#b0c1b7;padding:27px 0}.footer-grid{display:flex
 .project-featured .project-art{border-radius:5px}
 .project-art--stackbound{background:#eee4d3;border-color:#dfccb1}
 .project-art--signalforge{background:#e3ece7;border-color:#cbdcd2}
+.project-art--socfieldwork{background:#e4efe9;border-color:#c6d9d0}
+.project-art--socfieldwork::before{background:none}
+.project-art--socfieldwork svg{width:93%;height:93%}
 .project-art--stackbound::before,.project-art--signalforge::before{background:none}
 .project-art--stackbound svg,.project-art--signalforge svg{width:93%;height:93%}
 @media(max-width:740px){.project-actions{gap:13px}.project-demo{padding:10px 13px}}
