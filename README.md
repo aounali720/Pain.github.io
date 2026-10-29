@@ -11,6 +11,8 @@ A small static site where I keep my security labs, software projects and work ex
 
 ## Newly featured projects
 
+- **[SOC FIELDWORK](https://aounali720.github.io/soc-fieldwork/)** — an interactive SOC L1–L3 learning game with visual explainers, synthetic event logs, analyst shift simulations, evidence-search drills, incident decisions and interview exercises. [Source code](https://github.com/aounali720/soc-fieldwork).
+
 - **[Casefile Zero](https://aounali720.github.io/Pain.github.io/casefile-zero/)** — my standalone cybersecurity learning game covering all ten OWASP Top 10:2025 risks with annotated diagrams, code comparisons, 33 inert payload specimens, 30 questions and six TTP investigations. [Source](casefile-zero/README.md).
 
 - **[Ops Atlas](https://aounali720.github.io/ops-atlas/)** — a playable, open-source React/TypeScript training game for Git, GitHub, Docker, Kubernetes and cloud infrastructure. Includes 8 learning worlds, 40 missions, quizzes, flashcards, safe simulated terminal labs, daily quests, and a cosmetic reward system. [Source code](https://github.com/aounali720/ops-atlas).
