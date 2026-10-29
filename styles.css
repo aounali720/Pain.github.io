@@ -30,3 +30,8 @@ footer{background:#111c19;color:#b0c1b7;padding:27px 0}.footer-grid{display:flex
 .project-art--stackbound::before,.project-art--signalforge::before{background:none}
 .project-art--stackbound svg,.project-art--signalforge svg{width:93%;height:93%}
 @media(max-width:740px){.project-actions{gap:13px}.project-demo{padding:10px 13px}}
+/* Portfolio project diagrams: readable with or without JavaScript */
+.project-art--packetzero{background:#e5ede6;border-color:#cbdccf}
+.project-art--harborgrc{background:#e8efe8;border-color:#cfdfd2}
+.project-art--packetzero::before,.project-art--harborgrc::before{background:none}
+.project-art--packetzero svg,.project-art--harborgrc svg{width:93%;height:93%}
